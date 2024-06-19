@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="styleIndex.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="/Assets/logo.png" alt="Logo" class="logo">
+        <div class="nav-links">
+            <a href="#" data-target="video">Video</a>
+            <a href="#" data-target="imagen">Imagen</a>
+            <a href="#" data-target="sonido">Sonido</a>
+            <a href="#" data-target="iframe">iFrame</a>
+        </div>
+    </div>
+    <div class="content">
+        <div id="video" class="content-section" style="display:none;">
+            <h2>Corto Animado</h2>
+            <iframe width="100%" height="550" src="https://www.youtube.com/embed/_iQQaRkWmys?si=42Cjo35IYg1vaYh3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="imagen" class="content-section" style="display:none;">
+            <h2>Imagen</h2>
+            <div class="image-container">
+                <img src="/Assets/inteligencia-artificial-robot-.jpg" alt="inteligencia-artificial" class="image">
+                <div class="overlay">
+                    <div class="text">La Inteligencia Artificial (IA) es la combinación de algoritmos planteados 
+                        con el propósito de crear máquinas que presenten las mismas capacidades que el ser humano. 
+                        Una tecnología que todavía nos resulta lejana y misteriosa, pero que desde hace unos años está 
+                        presente en nuestro día a día a todas horas.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sonido" class="content-section" style="display:none;">
+            <h2>Neurosys Audio</h2>
+            <audio controls>
+                <source src="/Assets/neurosys-161556.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div id="iframe" class="content-section" style="display:none;">
+            <h2>Introducción a la Inteligencia Artificial</h2>
+            <iframe src="/Assets/Introduccion-a-la-inteligencia-artificial.pdf" width="520" height="700">
+                Tu navegador no soporta la etiqueta de iFrame.
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
